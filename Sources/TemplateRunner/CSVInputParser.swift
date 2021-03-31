@@ -8,14 +8,14 @@
 import Foundation
 
 
-class CSVInputParser: InputParser {
+open class CSVInputParser: InputParser {
     private let input:String
     
-    required init(_ input:String) {
+    public required init(_ input:String) {
         self.input = input
     }
     
-    func parse() throws -> [String : Any] {
+    public func parse() throws -> [String : Any] {
         var keys:[String]
         var items = [[String:String]]()
         

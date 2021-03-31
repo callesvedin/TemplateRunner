@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ParserError:Error {
+public enum ParserError:Error {
     case unknownInputFormat(message:String)
     case parseFailed(reason:String)
 }

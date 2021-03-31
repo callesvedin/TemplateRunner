@@ -6,8 +6,7 @@
 //
 
 import XCTest
-
-import templaterunner
+@testable import TemplateRunner
 
 class CSVInputParser_tests: XCTestCase {
 
@@ -49,5 +48,9 @@ class CSVInputParser_tests: XCTestCase {
         }
     }
 
+    static var allTests = [
+        ("testNrOfItemsInFile", testNrOfItemsInFile),
+        ("testWrongNumberOfValues", testWrongNumberOfValues),
+    ]
 
 }
