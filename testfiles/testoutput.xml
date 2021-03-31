@@ -1,0 +1,161 @@
+<group type="articleOptions">
+    <entity>
+        <newsitem title="A-Artikel" type="a" priority="1"/>
+        <exchange title="A 3100 (8)" articleTypeid="117"/>
+    </entity>
+
+    <entity>
+        <newsitem title="A-Artikel" type="a" priority="1"/>
+        <exchange title="A 3100 (8)" articleTypeid="251"/>
+    </entity>
+
+    <entity>
+        <newsitem title="A-Artikel" type="a" priority="1"/>
+        <exchange title="A 2500 (7)" articleTypeid="252"/>
+    </entity>
+
+    <entity>
+        <newsitem title="A-Artikel" type="a" priority="1"/>
+        <exchange title="A 2500 (7)" articleTypeid="118"/>
+    </entity>
+
+    <entity>
+        <newsitem title="A-Artikel" type="a" priority="1"/>
+        <exchange title="A 1850 (6)" articleTypeid="119"/>
+    </entity>
+
+    <entity>
+        <newsitem title="A-Artikel" type="a" priority="1"/>
+        <exchange title="A 1850 (6)" articleTypeid="253"/>
+    </entity>
+
+    <entity>
+        <newsitem title="A-Artikel" type="a" priority="1"/>
+        <exchange title="A 1850 (5)" articleTypeid="120"/>
+    </entity>
+
+    <entity>
+        <newsitem title="A-Artikel" type="a" priority="1"/>
+        <exchange title="A 1850 (5)" articleTypeid="259"/>
+    </entity>
+
+    <entity>
+        <newsitem title="B-Artikel" type="b" priority="3"/>
+        <exchange title="b 1650 (4)" articleTypeid="31"/>
+    </entity>
+
+    <entity>
+        <newsitem title="B-Artikel" type="b" priority="3"/>
+        <exchange title="B 1650 (4)" articleTypeid="254"/>
+    </entity>
+
+    <entity>
+        <newsitem title="B-Artikel" type="b" priority="3"/>
+        <exchange title="B 1250 (3)" articleTypeid="121"/>
+    </entity>
+
+    <entity>
+        <newsitem title="B-Artikel" type="b" priority="3"/>
+        <exchange title="B 1250 (3)" articleTypeid="255"/>
+    </entity>
+
+    <entity>
+        <newsitem title="B-Artikel" type="b" priority="3"/>
+        <exchange title="B 1000 (2)" articleTypeid="69"/>
+    </entity>
+
+    <entity>
+        <newsitem title="B-Artikel" type="b" priority="3"/>
+        <exchange title="B 1000 (2)" articleTypeid="256"/>
+    </entity>
+
+    <entity>
+        <newsitem title="B-Artikel" type="b" priority="3"/>
+        <exchange title="B 800 (2)" articleTypeid="122"/>
+    </entity>
+
+    <entity>
+        <newsitem title="B-Artikel" type="b" priority="3"/>
+        <exchange title="B 800 (2)" articleTypeid="257"/>
+    </entity>
+
+    <entity>
+        <newsitem title="B-Artikel" type="b" priority="3"/>
+        <exchange title="B 650 (2)" articleTypeid="144"/>
+    </entity>
+
+    <entity>
+        <newsitem title="B-Artikel" type="b" priority="3"/>
+        <exchange title="B 650 (2)" articleTypeid="258"/>
+    </entity>
+
+    <entity>
+        <newsitem title="C-Artikel" type="c" priority="4"/>
+        <exchange title="Notis lång" articleTypeid="72"/>
+    </entity>
+
+    <entity>
+        <newsitem title="C-Artikel" type="c" priority="4"/>
+        <exchange title="Notis kort" articleTypeid="36"/>
+    </entity>
+
+    <entity>
+        <newsitem title="C-Artikel" type="c" priority="4"/>
+        <exchange title="Notis siffra lång" articleTypeid="146"/>
+    </entity>
+
+    <entity>
+        <newsitem title="C-Artikel" type="c" priority="4"/>
+        <exchange title="Notis siffra lång" articleTypeid="238"/>
+    </entity>
+
+    <entity>
+        <newsitem title="A-Artikel" type="a" priority="2"/>
+        <exchange title="A topp (8) FEA" articleTypeid="80"/>
+    </entity>
+
+    <entity>
+        <newsitem title="A-Artikel" type="a" priority="2"/>
+        <exchange title="A topp (8) FEA" articleTypeid="233"/>
+    </entity>
+
+    <entity>
+        <newsitem title="A-Artikel" type="a" priority="2"/>
+        <exchange title="A topp (7) FEA" articleTypeid="153"/>
+    </entity>
+
+    <entity>
+        <newsitem title="A-Artikel" type="a" priority="2"/>
+        <exchange title="A topp (7) FEA" articleTypeid="227"/>
+    </entity>
+
+    <entity>
+        <newsitem title="A-Artikel" type="a" priority="2"/>
+        <exchange title="A topp (6) FEA" articleTypeid="154"/>
+    </entity>
+
+    <entity>
+        <newsitem title="A-Artikel" type="a" priority="2"/>
+        <exchange title="A topp (6) FEA" articleTypeid="234"/>
+    </entity>
+
+    <entity>
+        <newsitem title="A-Artikel" type="a" priority="2"/>
+        <exchange title="A topp (5) FEA" articleTypeid="155"/>
+    </entity>
+
+    <entity>
+        <newsitem title="A-Artikel" type="a" priority="2"/>
+        <exchange title="A topp (5) FEA" articleTypeid="235"/>
+    </entity>
+
+    <entity>
+        <newsitem title="C-Artikel" type="c" priority="4"/>
+        <exchange title="Notis feature" articleTypeid="149"/>
+    </entity>
+
+    <entity>
+        <newsitem title="C-Artikel" type="c" priority="4"/>
+        <exchange title="Notis feature" articleTypeid="228"/>
+    </entity>
+</group>

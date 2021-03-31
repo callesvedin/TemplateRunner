@@ -1,0 +1,6 @@
+<group type="articleOptions">{% for item in items %}
+    <entity>
+        <newsitem title="{{item.newsitemType}}-Artikel" type="{{ item.newsitemType|lowercase }}" priority="{{item.newsitemPriority}}"/>
+        <exchange title="{{item.newspilotTitle}}" articleTypeid="{{item.newspilotTypeId}}"/>
+    </entity>
+{% endfor %}</group>

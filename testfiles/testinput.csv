@@ -1,0 +1,33 @@
+newspilotTitle    , newspilotTypeId , newsitemType, newsitemPriority
+A 3100 (8)        ,  117            , A           ,   1
+A 3100 (8)        ,  251            , A           ,   1
+A 2500 (7)        ,  252            , A           ,   1
+A 2500 (7)        ,  118            , A           ,   1
+A 1850 (6)        ,  119            , A           ,   1
+A 1850 (6)        ,  253            , A           ,   1
+A 1850 (5)        ,  120            , A           ,   1
+A 1850 (5)        ,  259            , A           ,   1
+b 1650 (4)        ,  31             , B           ,   3
+B 1650 (4)        ,  254            , B           ,   3
+B 1250 (3)        ,  121            , B           ,   3
+B 1250 (3)        ,  255            , B           ,   3
+B 1000 (2)        ,  69             , B           ,   3
+B 1000 (2)        ,  256            , B           ,   3
+B 800 (2)         ,  122            , B           ,   3
+B 800 (2)         ,  257            , B           ,   3
+B 650 (2)         ,  144            , B           ,   3
+B 650 (2)         ,  258            , B           ,   3
+Notis lång        ,  72             , C           ,   4
+Notis kort        ,  36             , C           ,   4
+Notis siffra lång ,  146            , C           ,   4
+Notis siffra lång ,  238            , C           ,   4
+A topp (8) FEA    ,  80             , A           ,   2
+A topp (8) FEA    ,  233            , A           ,   2
+A topp (7) FEA    ,  153            , A           ,   2
+A topp (7) FEA    ,  227            , A           ,   2
+A topp (6) FEA    ,  154            , A           ,   2
+A topp (6) FEA    ,  234            , A           ,   2
+A topp (5) FEA    ,  155            , A           ,   2
+A topp (5) FEA    ,  235            , A           ,   2
+Notis feature     ,  149            , C           ,   4
+Notis feature     ,  228            , C           ,   4
