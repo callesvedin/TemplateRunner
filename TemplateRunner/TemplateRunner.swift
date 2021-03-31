@@ -52,6 +52,7 @@ struct TemplateRunner: ParsableCommand {
             }
             
             writeOutput(result:result, to:output)
+            print("Wrote result to \(output)")
         }
         catch let error as NSError {
             print("Ooops! Something went wrong: \(error)")
@@ -60,9 +61,6 @@ struct TemplateRunner: ParsableCommand {
     }
     
     func writeOutput(result:String, to filePath:String) {
-//        let path = FileManager.default.urls(for: .documentDirectory,
-//                                            in: .userDomainMask)[0].appendingPathComponent("myFile")
-//
         if let stringData = result.data(using: .utf8) {
             try? stringData.write(to: URL(fileURLWithPath: filePath))
         }
