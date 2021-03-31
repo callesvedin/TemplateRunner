@@ -5,10 +5,10 @@ build:
 	swift build -c release --disable-sandbox
 
 install: build
-	install ".build/release/TemplateRunner" "$(bindir)/template-runner"	
+	install ".build/release/TemplateRunner" "$(bindir)"	
 
 uninstall:
-	rm -rf "$(bindir)/template-runner"	
+	rm -rf "$(bindir)/TemplateRunner"	
 
 clean:
 	rm -rf .build
