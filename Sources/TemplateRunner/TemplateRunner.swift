@@ -19,12 +19,12 @@ import Stencil
 
 
 struct TemplateRunner: ParsableCommand {
-    static let configuration = CommandConfiguration(abstract: "A Swift command-line tool to generate output")
+    static let configuration = CommandConfiguration(abstract: "A Swift command-line tool to generate output with Stencil using a csv file as input")
     
     @Option(name: .shortAndLong, help: "The file path to the Stencil template")
     private var template: String
     
-    @Option(name: .shortAndLong, help: "Path to input data file")
+    @Option(name: .shortAndLong, help: "Path to input data file (.csv)")
     private var input: String
 
     @Option(name: .shortAndLong, help: "Path to output file")
