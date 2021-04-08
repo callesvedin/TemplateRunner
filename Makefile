@@ -8,7 +8,7 @@ install: build
 	install ".build/release/TemplateRunner" "$(bindir)"	
 
 uninstall:
-	rm -rf "$(bindir)/templaterunner"	
+	rm -rf "$(bindir)/TemplateRunner"	
 
 clean:
 	rm -rf .build
