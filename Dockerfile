@@ -11,4 +11,4 @@ RUN mv `swift build -c release --show-bin-path` ./app/bin
 FROM swift:5.4-slim
 WORKDIR /TemplateRunner
 COPY --from=builder /TemplateRunner/app/bin/release/template-runner .
-CMD ["./template-runner"]
+ENTRYPOINT ["./template-runner"]
