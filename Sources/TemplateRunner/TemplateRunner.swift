@@ -1,21 +1,7 @@
-//
-//  SwiftReplacer.swift
-//  templaterunner
-//
-//  Created by carl-johan.svedin on 2021-02-27.
-//
-
-import Foundation
-//
-//  main.swift
-//  TemplateReplacer
-//
-//  Created by carl-johan.svedin on 2021-02-25.
-//
-
 import Foundation
 import ArgumentParser
 import Stencil
+import TemplateRunnerCore
 
 
 struct TemplateRunner: ParsableCommand {
@@ -34,25 +20,9 @@ struct TemplateRunner: ParsableCommand {
     private var verbose: Bool = false
     
     func run() throws {
-        if verbose {
-            print("Creating output from template at '\(template)' and data at '\(input)'")
-        }
-        do {
-            let templateContents = try String(contentsOfFile: template, encoding: .utf8)
-            let inputParser = try ParserFactory.getParser(filePath: input)
-            let inputData = try inputParser.parse()
-            
-            let environment = Environment()
-
-            let context = inputData
-            let result = try environment.renderTemplate(string: templateContents, context: context)
-                        
-            if (verbose) {
-                print("\(result)")
-            }
-            
-            writeOutput(result:result, to:output)
-            print("Wrote result to \(output)")
+        do {            
+            let command = TemplateRunnerCommand(template: template, input:input, output:output, verbose:verbose)
+            try command.run()
         }
         catch let error as NSError {
             print("Ooops! Something went wrong: \(error)")

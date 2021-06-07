@@ -12,14 +12,14 @@ public enum ParserError:Error {
     case parseFailed(reason:String)
 }
 
-protocol InputParser {
+public protocol InputParser {
     init(_ someParameter: String)
     func parse() throws -> [String:Any]
 }
 
 
-class ParserFactory {
-    static func getParser(filePath:String) throws -> InputParser {
+open class ParserFactory {
+    public static func getParser(filePath:String) throws -> InputParser {
         let ext = filePath.split(separator: ".").last
         let dataContents = try String(contentsOfFile: filePath, encoding: .utf8)
         switch ext {
