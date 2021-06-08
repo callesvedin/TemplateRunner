@@ -19,7 +19,10 @@ open class CSVInputParser: InputParser {
         var keys:[String]
         var items = [[String:String]]()
         
-        let lines = input.split(separator: "\n").filter({inLine in !(inLine.isEmpty || inLine.starts(with: "#"))})
+        let lines = input.split(separator: "\n")
+            .map({$0.trimmingCharacters(in: CharacterSet.whitespaces)})
+            .filter({inLine in !(inLine.isEmpty || inLine.starts(with: "#"))}
+       )
         keys = lines[0].split(separator: ",").map({$0.trimmingCharacters(in: CharacterSet.whitespaces)})
 
         for i in 1..<lines.count {

@@ -1,34 +1,8 @@
 import XCTest
 import class Foundation.Bundle
-import TemplateRunner
+import TemplateRunnerCore
 
 final class TemplateRunnerTests: XCTestCase {
-//    func testExample() throws {
-//        // This is an example of a functional test case.
-//        // Use XCTAssert and related functions to verify your tests produce the correct
-//        // results.
-//
-//        // Some of the APIs that we use below are available in macOS 10.13 and above.
-//        guard #available(macOS 10.13, *) else {
-//            return
-//        }
-//
-//        let fooBinary = productsDirectory.appendingPathComponent("TemplateRunner")
-//
-//        let process = Process()
-//        process.executableURL = fooBinary
-//
-//        let pipe = Pipe()
-//        process.standardOutput = pipe
-//
-//        try process.run()
-//        process.waitUntilExit()
-//
-//        let data = pipe.fileHandleForReading.readDataToEndOfFile()
-//        let output = String(data: data, encoding: .utf8)
-//
-////        XCTAssertEqual(output, "Hello, world!\n")
-//    }
 
     /// Returns path to the built products directory.
     var productsDirectory: URL {
@@ -71,11 +45,50 @@ final class TemplateRunnerTests: XCTestCase {
             XCTFail("Code threw wrong error. Error:\(error)")
         }
     }
+    
+    func testComments() throws {
+        let parser = CSVInputParser(
+            """
+                TEST 1, TEST 2
+                Value 11, Value 12
+                # This is a comment
+                Value 21, Value 22
+            """)
+        do {
+            _ = try parser.parse()
+        }catch ParserError.parseFailed(let reason){
+            print("Parser error thrown. Reason \(reason)")
+            XCTFail("Code threw wrong error. Error:\(reason)")
+        }catch{
+            print("Parser threw wrong error:\(error.localizedDescription)")
+            XCTFail("Code threw wrong error. Error:\(error)")
+        }
+    }
+
+    func testEmptyLine() throws {
+        let parser = CSVInputParser(
+            """
+                TEST 1, TEST 2
+                Value 11, Value 12
+                
+                Value 21, Value 22
+            """)
+        do {
+            _ = try parser.parse()
+        }catch ParserError.parseFailed(let reason){
+            print("Parser error thrown. Reason \(reason)")
+            XCTFail("Code threw wrong error. Error:\(reason)")
+        }catch{
+            print("Parser threw wrong error:\(error.localizedDescription)")
+            XCTFail("Code threw wrong error. Error:\(error)")
+        }
+    }
 
 
     static var allTests = [
-//        ("testExample", testExample),
         ("testNrOfItemsInFile", testNrOfItemsInFile),
-//        ("testWrongNumberOfValues", testWrongNumberOfValues),
+        ("testWrongNumberOfValues", testWrongNumberOfValues),
+        ("testComments", testComments),
+        ("testEmptyLine", testEmptyLine)
     ]
 }
